@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 0.9rem;
+    font-family: Roboto, sans-serif;
+    color: #F1F1F2;
+    background-color: #1995AD;
+    letter-spacing: 0.2rem;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 2.1em;
+}
+
+p{
+    padding: 8px 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-block-end: 100px;
+}
+
+.github-icon{
+    font-size: 4.5rem;
+}
+
+section{
+    padding: 20px 0;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin-block-end: 30px;
+
+    >.search{
+        padding: 8px;
+        width: 40%;
+        border: none;
+        border-radius: 5px;
+        
+
+        &:focus{
+            outline:3px solid #264b53;
+        }
+    }
+
+
+}
+
+
+
+.repo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.view-more-container{
+    display: flex;
+    justify-content: center;
+}
+
+.view-more{
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #F1F1F2;
+    background-color: #1995AD;
+    cursor: pointer;
+    margin: 20px 0 20px;
+
+    &:hover{
+        border: 3px solid #264b53;
+
+    }
+}
+
+.repo-card, .repodetail-card{
+    border: 1px solid #A1D6E2;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #F1F1F2;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.repo-name {
+    color: #F1F1F2;
+    font-size: 1.4rem;
+    word-break: break-word;
+}
+
+#repodetail {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#repodetail p{
+    padding: 12px 0;
+    word-break: break-all;
+}
+
+#repodetail > p{
+    margin-block-start: 10px;
+    text-align: center;
+}
+
+.icons {
+    color: #F1F1F2;
+}
+
+
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50h;
+}
+
+.error-page h1 {
+    font-size: 3rem;
+    color: #F1F1F2;
+    margin-bottom: 20px;
+}
+
+.error-status {
+    font-size: 5rem;
+}
+
+
+@media screen and (max-width: 375px) {
+    .repo-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .search{
+        text-align: center;
+    }
+
+    .github-icon {
+        font-size: 2rem;
+    }
+
+}
+
