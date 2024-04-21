@@ -167,6 +167,10 @@ a {
         text-align: center;
     }
 
+    .error-page p{
+        text-align: center;
+    }
+
     .github-icon {
         font-size: 2rem;
     }
